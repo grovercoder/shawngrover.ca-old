@@ -1,0 +1,117 @@
+
+.hero-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    height: 30vh;
+    padding: 0.5em;
+    position: relative;
+    width: 100vw;
+
+    &.active {
+        align-items: space-between;
+        display: grid;
+        grid-template-rows: auto 80px;
+    }
+
+    h1, p {
+        color: white;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        display: none;
+    }
+ 
+    .cta {
+        margin: auto 0;
+        text-align: center;
+
+        a.cta {
+            background-color: #0017e2;
+            border-radius: 0.5em;
+            border: none;
+            box-shadow: 0 0 13px #00109c;
+            color: white;
+            display: inline-block;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 1em 0.5em;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &.web-solutions {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/building-blocks1.png");
+    }
+    &.agile-expertise {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/phoenix.png");
+    }
+    &.platforms {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/flying-car2.png");
+    }
+    &.education {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/textbooks1.png");
+    }
+    &.infrastructure {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/tech-city.png");
+    }
+    &.virtualization {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/bridge1.png");
+    }
+    &.ux {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/blueprint.png");
+    }
+    &.automation {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/clockwork1.png");
+    }
+    &.leadership {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url("/img/leadership1.png");
+    }
+    &.excellence {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                            url("/img/eagle.png");
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-content {
+        padding: 1em;
+
+        &.active {
+            grid-template-rows: auto auto 80px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            display: block;
+        }
+
+        .cta {
+            a.cta {
+                padding: 1em;
+            }
+        }
+    }
+}
+

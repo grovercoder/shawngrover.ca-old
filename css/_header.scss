@@ -1,0 +1,134 @@
+header {
+    background-color: transparent;
+    padding: 10px 20px;
+    width: 100%;
+
+    .brand {
+        font-family: "Oxygen", sans-serif;
+
+        a {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 60px auto;
+        }
+        
+        img {
+            height: auto;
+            margin-right: 10px;
+            width: 50px; /* Adjust size as needed */
+        }
+        span {
+            color: white;
+            font-size: 1.2em;
+            margin-left: 0.25em;
+            text-transform: uppercase;
+        }
+    }
+
+    nav {
+        align-items: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+
+        .overlay-content {
+            background-image: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, .8));
+            display: block;
+            height: 100vh;
+            left: 0;
+            padding: 5em 0;
+            position: absolute;
+            top: 0;
+            transform: translateY(-100%);
+            transition: transform 0.5s ease;
+            width: 100vw;
+            z-index: 10;
+
+            &.active {
+                display: block;
+                transform: translateY(0);
+            }
+
+            a {
+                color: white;
+                display: block;
+                font-family: monospace;
+                font-size: 1.5em;
+                font-weight: bold;
+                padding: 0.5em;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+
+        & > a {
+            color: white;
+            margin-left: 1em;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .burger {
+            display: block;
+            height: 30px;
+            width: 30px;
+            z-index: 20;
+            
+            .bar {
+                background-color: white;
+                height: 4px;
+                margin: 0.25em;
+                transition: transform 0.5s ease;
+                width: 100%;
+
+            }
+            
+            &.active {
+                .bar:nth-child(2) {
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                }
+                .bar:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                .bar:nth-child(3) {
+                    transform: rotate(-45deg) translate(5px, -5px);
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        
+        nav {
+            .burger {
+                display: none;
+            }
+
+            .overlay-content {
+                background-image: none;
+                height: inherit;
+                left: inherit;
+                padding-right: 1em;
+                padding: 0;
+                position: relative;
+                top: inherit;
+                transform: translateY(0);
+                width: inherit;
+
+                a {
+                    display: inline;
+                    font-size: 1em;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

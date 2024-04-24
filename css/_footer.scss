@@ -1,0 +1,39 @@
+#footer {
+    background-color: #444;
+    color: gray;
+    font-size: 0.8em;
+    padding: 2em;
+    text-align: center;
+    .nav, .links {
+        margin-bottom: 1em;
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.25em 0;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .social {
+        margin-bottom: 1em;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #footer {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+        
+        .copyright {
+            text-align: left;
+            grid-column: 1 / -1;
+        }
+    }
+}
