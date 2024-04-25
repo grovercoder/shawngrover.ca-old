@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
+
+<svg
+   width="120"
+   height="30"
+   viewBox="0 0 120 30"
+   fill="#fff"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="indicator.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="11.083333"
+     inkscape:cx="53.639098"
+     inkscape:cy="14.977444"
+     inkscape:window-width="2560"
+     inkscape:window-height="1007"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <circle
+     cx="15"
+     cy="15"
+     r="15"
+     id="circle2"
+     style="fill:#0000ff">
+    <animate
+       attributeName="r"
+       from="15"
+       to="15"
+       begin="0s"
+       dur="0.8s"
+       values="15;9;15"
+       calcMode="linear"
+       repeatCount="indefinite" />
+    <animate
+       attributeName="fill-opacity"
+       from="1"
+       to="1"
+       begin="0s"
+       dur="0.8s"
+       values="1;.5;1"
+       calcMode="linear"
+       repeatCount="indefinite" />
+  </circle>
+  <circle
+     cx="60"
+     cy="15"
+     r="9"
+     fill-opacity="0.3"
+     id="circle4"
+     style="fill:#0000ff">
+    <animate
+       attributeName="r"
+       from="9"
+       to="9"
+       begin="0s"
+       dur="0.8s"
+       values="9;15;9"
+       calcMode="linear"
+       repeatCount="indefinite" />
+    <animate
+       attributeName="fill-opacity"
+       from="0.5"
+       to="0.5"
+       begin="0s"
+       dur="0.8s"
+       values=".5;1;.5"
+       calcMode="linear"
+       repeatCount="indefinite" />
+  </circle>
+  <circle
+     cx="105"
+     cy="15"
+     r="15"
+     id="circle6"
+     style="fill:#0000ff">
+    <animate
+       attributeName="r"
+       from="15"
+       to="15"
+       begin="0s"
+       dur="0.8s"
+       values="15;9;15"
+       calcMode="linear"
+       repeatCount="indefinite" />
+    <animate
+       attributeName="fill-opacity"
+       from="1"
+       to="1"
+       begin="0s"
+       dur="0.8s"
+       values="1;.5;1"
+       calcMode="linear"
+       repeatCount="indefinite" />
+  </circle>
+</svg>
