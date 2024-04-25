@@ -320,6 +320,17 @@ header nav .burger.active .bar:nth-child(3) {
 #contact .container button:hover {
   background-color: #8afc8a;
 }
+#contact .container .response {
+  font-size: 1.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+#contact .container .response.thanks {
+  background-color: #6eca6e;
+}
+#contact .container .response.error {
+  background-color: #ffc5c5;
+}
 
 #footer {
   background-color: #444;

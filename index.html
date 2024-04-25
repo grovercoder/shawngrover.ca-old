@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Shawn Grover offers customized web solutions, technology consulting, training, and infrastructure optimization services.">
     <title>Shawn Grover - Web Developer and Consultant</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/htmx.min.js"></script>
+    <script src="/js/shawngrover.js"></script>
 </head>
 <body>
 
@@ -205,7 +207,7 @@
             <div class="container">
                 <h2>Contact Me</h2>
                 <p>Have a question or want to discuss a project? Fill out the form below and I'll get back to you as soon as possible.</p>
-                <form action="submit.php" method="post">
+                <form hx-post="/contact" hx-target="#contact .container">
                     <div class="form-group">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required autocomplete="name">
@@ -245,8 +247,5 @@
             &copy; Copyright Shawn Grover
         </div>
     </footer>
-
-    <!-- Add link to your JavaScript file here -->
-    <script src="/js/shawngrover.js"></script>    
 </body>
 </html>
