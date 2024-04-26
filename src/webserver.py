@@ -1,15 +1,15 @@
-from fastapi import FastAPI, Form, HTTPException
+from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse, Response
 from fastapi.middleware.cors import CORSMiddleware
 
-from .contact_route import router as ContactRouter
+from .route_contact import router as ContactRouter
+from .route_home import router as HomeRouter
 import os
 
 class WebServer():
     def __init__(self):
         print('initializing web server')
-        self.app = FastAPI()
+        self.app = FastAPI(COOKIE_SAMESITE="strict")
         self.config_cors()
         self.add_middleware()
         self.add_routes()
@@ -33,10 +33,11 @@ class WebServer():
             )        
 
     def add_middleware(self):
-        pass
         # self.app.add_middleware(CacheControlMiddleware, cachecontrol_max_age=3600)  # Cache files for 1 hour (3600 seconds)
+        pass
 
     def add_routes(self):
+        self.app.include_router(HomeRouter)
         self.app.include_router(ContactRouter)        
 
     def add_static(self):
