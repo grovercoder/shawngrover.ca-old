@@ -1,0 +1,18 @@
+# copy this file to `/etc/systemd/system/MYAPP.service`
+# change the "MYAPP" to match your application name
+# Alter the paths below to match where your application is stored
+# This assumes a python virtual enviornment created with `python3 -m venv .venv`.
+
+[Unit]
+Description=MyApp Service
+After=network.target
+
+[Service]
+User=<your_username>
+WorkingDirectory=/home/apps/myapp
+Environment="PATH=/home/apps/myapp/.venv/bin"
+ExecStart=/home/apps/myapp/.venv/bin/python3 /home/apps/myapp/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
