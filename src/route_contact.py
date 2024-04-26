@@ -8,7 +8,6 @@ router = APIRouter()
 
 @router.post("/contact", response_class=HTMLResponse)
 def handle_contact_request(name: Annotated[str, Form()], email: Annotated[str, Form()], message: Annotated[str, Form()]):
-    print('trying email')
     siteemail = SiteEmail()
     # siteemail.debug = True
     if siteemail.send(name, email, message):
