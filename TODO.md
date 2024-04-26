@@ -1,12 +1,6 @@
 # Work that needs to be done yet:
 
-## Contact Form Handler
-
-The form is created.  However the backend to handle the form submission is still required.
-
 ## Image Optimization and clean up
-
-The images have not yet been optimized for web consumption.
 
 Some images used for the development process are no longer referenced.  These can be removed.  Same for some of the font files.
 
